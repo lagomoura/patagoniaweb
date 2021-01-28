@@ -1,0 +1,521 @@
+
+/* GENERAL STYLES */
+:root {
+  --mainYellow: #fdbe02;
+  --mainWhite: #fff;
+  --mainBlack: #071013;
+  --mainGrey: #9b9999;
+  --TransGrey: rgba(0, 0, 0, 0.1);
+}
+body {
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+}
+
+.text-slanted {
+  font-family: 'Raleway', sans-serif
+}
+
+.text-yellow {
+  color: var(--mainYellow);
+}
+
+.btn-yellow {
+  background: var(--mainYellow);
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: var(--mainBlack);
+  transition: all 0.5s ease;
+}
+
+.btn-yellow:hover {
+  background: var(--mainBlack);
+  color: var(--mainYellow);
+}
+
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: var(--mainBlack);
+  border-radius: 10px !important;
+  border: 0.1rem solid var(--mainBlack);
+}
+
+.btn-black:hover{
+  background: var(--mainBlack);
+  color: var(--mainYellow);
+}
+
+.banner-sale {
+  min-height: 60vh;
+  background: url(../img/salebg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.banner-store {
+  min-height: calc(100vh - 178px);
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(253,253,253,0.1)), url(../img/storebg3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: left !important;
+  color: var(--mainYellow);
+  background-attachment: fixed;
+}
+
+.banner-new-product {
+  background: url(../img/new-product.jpg);
+  min-height: calc(100vh - 178px);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--mainYellow);
+  background-position: 80%;
+}
+
+.banner-hops {
+  height: 80vh;
+  background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/hops.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position: top;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.hops-text {
+  color: var(--mainWhite);
+  font-size: 2.5rem;
+  position: absolute;
+  top: 40%;
+  right: 10%;
+}
+
+.banner-malt {
+  height: 80vh;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/malt2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+.malt-text {
+  color: var(--mainWhite);
+  font-size: 2.5rem;
+}
+
+.banner-yeast {
+  height: 80vh;
+  background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/banner-yeast.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+}
+
+.yeast-text {
+  color: var(--mainWhite);
+  font-size: 2.5rem;
+}
+
+.sub-text {
+  font-size: 1.5rem !important;
+}
+
+.sale-btn {
+  font-size: 0.9rem;
+  transform: translateX(110%);
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.store-btn {
+  font-size: 0.9rem;
+  transform: translateX(110%);
+  margin-top: 20px;
+  padding: 10px;
+}
+
+/* navbar */
+
+.logo-text {
+  font-size: 1rem;
+
+}
+.navbar-toggler {
+  outline: none !important;
+  border: none;
+  font-size: 2rem;
+  color: var(--mainYellow) !important;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  border-bottom: 0.1rem solid var(--mainWhite); /* colocamos essa borda branca para que o link que tiver escolhido como classe de active tera a borda destacada */
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+
+.nav-link:hover {
+  background: var(--mainYellow);
+}
+
+.nav-active { 
+  border-bottom: var(--mainYellow); /* esse e a classe do link escolhido dando a borda destacada em amarelo */
+}
+
+.navbar-icon {
+  font-size: 1.5rem;
+  color: var(--mainYellow);
+  transition: all 0.3s ease;
+}
+
+.navbar-icon:hover {
+  color: var(--mainGrey);
+}
+
+.navbar-cart-icon {
+  position: relative;
+}
+
+.cart-items {
+  color: var(--mainWhite);
+  position: absolute;
+  /* sempre que damos posicao absolute temos que informar qual e a posicao e essa posicao e em referencia ao parent container */
+  top: 36%;
+  right: 1%;
+  padding: 0.1rem 0.3rem; /* top > right */
+  background: var(--mainYellow);
+  font-size: 0.6rem;
+  border-radius: 50%;
+}
+
+/* banner */
+
+.banner {
+  min-height: calc(100vh - 178px);
+  background:url(../img/fundonovo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+ /* Categories index */
+
+.home-categories {
+  background: var(--TransGrey);
+}
+
+.categories-link {
+  color: var(--mainBlack);
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.categories-link:hover {
+  text-decoration: none;
+  color: var(--mainBlack);;
+}
+
+.categories-underline {
+  height: 0.1rem;
+  width: 5rem;
+  background: var(--mainYellow);
+}
+
+.categories-underline:hover {
+  background: var(--mainBlack);
+}
+
+.category-container {
+  position: relative;
+}
+
+.category-img {
+  transition: all 0.4s ease-in-out;
+}
+
+.category-container:hover .category-img {
+  opacity: 0.5;
+}
+
+.category-link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0.2rem 3rem 0.2rem 0.2rem;
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%); /* da o shape cortado superior esquedo, superior direito, inferior direito, inferior esquerdo */
+  opacity: 0;
+  transition: all 0.5s linear;
+  text-decoration: none !important;
+}
+
+.category-container:hover .category-link {
+  opacity: 1;
+  color: var(--mainBlack);
+}
+
+
+/* Featured */
+
+.featured {
+background: var(--mainWhite)
+}
+
+.featured-container{
+  position: relative;
+  overflow: hidden;
+  border: 0.1rem solid rgba(0,0,0,0.1);
+  border-radius: 20px;
+}
+
+.featured-search-icon {
+  background: var(--mainWhite);
+  display: inline-block;
+  padding: 0.2rem 0.4rem; /* top/bottom left/right*/
+  position: absolute;
+  right: 0;
+  top: 80%;
+  transition: all 0.5s ease;
+  font-size: 1.2rem;
+  transform: translateX(110%);
+  cursor: pointer;
+}
+
+.featured-search-icon:hover {
+  background: var(--mainBlack);
+  color: var(--mainYellow);
+}
+
+.featured-container:hover .featured-search-icon{
+  transform: translateX(0%);
+}
+
+.featured-container:hover .featured-store-link {
+  transform: translateX(0%);
+}
+
+
+.featured-store-link {
+  background: var(--mainYellow);
+  color: var(--mainBlack);
+  position: absolute;
+  right: 0;
+  top: 90%;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  transform: translateX(110%);
+  padding: 0.2rem 0.4rem;
+}
+
+.featured-store-link:hover{
+  text-decoration: none;
+  color: var(--mainYellow);
+  background: black;
+}
+
+.old-price {
+  text-decoration: line-through;
+  
+}
+
+/* Sustainability */
+
+.sustainability {
+  min-height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0,0,0,0.3)), url(../img/sustainability.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.sustainability-link {
+  text-decoration: none !important;
+  color: var(--mainYellow);
+  transition: all 0.3s ease;
+}
+
+.sustainability-link:hover {
+  text-decoration: none !important;
+  color: var(--mainWhite);
+}
+
+.sustainability-underline {
+  height: 0.1rem;
+  width: 5rem;
+  background: var(--mainYellow);
+  margin: 0 auto;
+}
+
+.sustainability-text {
+  position: absolute;
+  right: -20%;
+  top: 45%;
+}
+
+/* partners */
+
+.partners {
+  background: var(--TransGrey);
+}
+
+.carousel-control-prev {
+  font-size: 2.5rem;
+  color: var(--mainBlack);
+  transform: translateX(-200%);
+}
+
+.carousel-control-next {
+  font-size: 2.5rem;
+  color: var(--mainBlack);
+  transform: translateX(200%);
+}
+
+/* newsletter */
+
+.form-icon {
+  color: var(--mainBlack);
+  background: var(--mainGrey);
+}
+
+/* Services */
+
+.services {
+  background: var(--mainBlack);
+}
+
+.services-icon {
+  color: var(--mainYellow);
+  font-size: 2rem;
+}
+
+
+/* Store */
+
+.store {
+  background: var(--mainWhite);
+}
+
+.store-categories {
+  background: var(--mainBlack);
+}
+
+.store-container {
+  position: relative;
+  overflow: hidden;
+  border: 0.1rem solid rgba(0,0,0,0.1);
+  border-radius: 20px;
+}
+
+.store-container:hover .featured-search-icon {
+transform: translateX(0%);
+}
+
+.store-container:hover .featured-store-link {
+  transform: translateX(0%);
+}
+
+.store-item {
+  cursor: pointer;
+}
+
+.store-item:hover {
+  color: var(--mainYellow);
+  text-decoration: underline;
+}
+
+.satisfaction {
+  color: var(--mainYellow);
+  background: var(--mainBlack);
+}
+
+/* Categories store */
+
+
+.store-categories-underline {
+  height: 0.2rem;
+  width: 5rem;
+  background: var(--mainYellow);
+}
+
+.store-categories-title {
+  color: var(--mainYellow);
+  font-size: 1rem !important;
+}
+
+.store-categories-link {
+  color: var(--mainBlack);
+  font-size: 1rem;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+}
+
+.store-categories-link:hover{
+  color: var(--mainYellow);
+  text-decoration: none;
+}
+
+.price-range {
+  color: var(--mainBlack);
+}
+
+/* New products */
+
+.rating-icon {
+  color: var(--mainYellow);
+}
+
+.new-product-photo {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+  border: 0.1rem solid transparent;
+  box-sizing: border-box !important;
+}
+
+.new-product-photo:hover{
+  opacity: 1;
+}
+
+
+/* cart */
+
+.banner-cart {
+  background: url(../img/beerfondo2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: calc(100vh - 191px);
+}
+
+/* footer */
+
+.footer {
+  background: var(--mainGrey);
+}
+
+.footer-title {
+  border: 0.2rem solid var(--mainYellow);
+  padding: 0.4rem;
+
+}
+.footer-icon {
+  color: var(--mainYellow);
+}
