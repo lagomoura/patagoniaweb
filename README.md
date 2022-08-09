@@ -2,7 +2,7 @@
 
 ## HomeBrewPremium
 
-Ecommerce dedicado a la comercialiazcion de productos cerveceros.
+E-commerce dedicado a la comercialiazcion de productos cerveceros.
 
 Tecnologias utilizadas:
 
