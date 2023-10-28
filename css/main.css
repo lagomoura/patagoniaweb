@@ -1,10 +1,10 @@
 
 /* GENERAL STYLES */
 :root {
-  --mainYellow: #fdbe02;
+  --mainYellow: #D69400;
   --mainWhite: #fff;
   --mainBlack: #071013;
-  --mainGrey: #9b9999;
+  --mainGrey: #B1C1C0;
   --TransGrey: rgba(0, 0, 0, 0.1);
 }
 body {
@@ -204,7 +204,7 @@ body {
 
 .banner {
   min-height: calc(100vh - 178px);
-  background:url(../img/fundonovo.jpg);
+  background:url(../img/banner-retornable.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -338,7 +338,7 @@ background: var(--mainWhite)
 
 .sustainability {
   min-height: 80vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0,0,0,0.3)), url(../img/sustainability.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0,0,0,0.3)), url(../img/patagonia-view.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
