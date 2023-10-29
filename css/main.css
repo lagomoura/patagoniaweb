@@ -82,6 +82,17 @@ body {
 	background-position: 80%;
 }
 
+.banner-contacto {
+	background: url(../img/patagon.jpg);
+	min-height: calc(100vh - 178px);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: var(--mainYellow);
+	background-position: 80%;
+}
+
 .banner-hops {
 	height: 80vh;
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
