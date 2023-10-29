@@ -71,8 +71,8 @@ body {
 	background-attachment: fixed;
 }
 
-.banner-new-product {
-	background: url(../img/new-product.jpg);
+.banner-conocenos {
+	background: url(../img/patagonia.jpg);
 	min-height: calc(100vh - 178px);
 	background-size: cover;
 	background-attachment: fixed;
@@ -482,40 +482,6 @@ body {
 	color: var(--mainBlack);
 }
 
-/* New products */
-
-.rating-icon {
-	color: var(--mainYellow);
-}
-
-.new-product-photo {
-	cursor: pointer;
-	transition: all 0.3s ease;
-	opacity: 0.5;
-	border: 0.1rem solid transparent;
-	box-sizing: border-box !important;
-}
-
-.new-product-photo:hover {
-	opacity: 1;
-}
-
-/* .banner-producto1{
-	background: url(../img/beerfondo2.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	display: block;
-}
-
-.banner-producto2{
-	background: url(../img/beerfondo.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	width: 50%;
-} */
 
 /* cart */
 
