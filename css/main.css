@@ -493,6 +493,11 @@ body {
 	min-height: calc(100vh - 191px);
 }
 
+#conocenos {
+	background: #005A3A;
+	filter: opacity(90%)
+}
+
 /* footer */
 
 .footer {
