@@ -1,256 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- main css -->
-    <link rel="stylesheet" href="css/main.css" />
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- font awesome desde url -->
-    <script src="https://kit.fontawesome.com/f5161e1654.js" crossorigin="anonymous"></script>
-    <title>TP_Pataonia_WEB</title>
-    <!--FAVICON-->
-    <link rel="apple-touch-icon" sizes="120x120" href="/favicom/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicom/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicom/favicon-16x16.png">
-    <link rel="manifest" href="favicom/site.webmanifest">
-    <link rel="mask-icon" href="favicom/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-  </head>
 
-  <body>
-<header>
-<!--navbar-->
-<nav class="navbar navbar-expand-sm navbar-light"> <!--a partir de lg screen a nav bar deixa de ser menu sandwich (toggle) e passa a ter os links expostos. Se expande-->
-<a href="index.html" class="navbar-brand">
-  <img src="./img/logo_patagonia.png" width="200" height="100%" alt="Logomarca Patagonia">
-</a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarid"> <!--toggler e o menu sandwich-->
-  <i class="fas fa-bars"></i> <!--menu sandwich-->
-</button>
-<div class="collapse navbar-collapse" id="navbarid">
-  <ul class="navbar-nav mx-auto">
-    <li class="nav-item mx-2 nav-active">
-      <a href="index.html" class="nav-link">Home</a>
-    </li>
-    <li class="nav-item mx-2">
-      <a href="evento.html" class="nav-link">Evento</a>
-    </li>
-    <li class="nav-item mx-2">
-      <a href="store.html" class="nav-link">Productos</a>
-    </li>
-    <li class="nav-item mx-2">
-      <a href="singleproduct.html" class="nav-link">Conocenos</a>
-    </li>
-  </ul>
-</div>
-<div class="navbar-icons d-none d-sm-flex">
-  <!--single icon-->
-  <div class="navbar-icon mx-2"> <!-- font awesome nedds a parent container a, span, div doenst matter-->
-    <i class="fas fa-search"></i>
-  </div>
-  <!-- end of single icon-->
-  <!--single icon-->
-  <a href="cart.html" class="navbar-icon mx-2 navbar-cart-icon">
-    <i class="fas fa-shopping-cart"></i>
-  </a>
-  <div class="cart-items">3</div>
-  <!--end of single icon-->
-</div>
-</nav>
-<!--end of navbar-->
-<!--banner-->
-<div class="banner d-flex align-items-center pl-3 pl-lg-5">
-  <div>
-    <h1 class="text-capitalize text-slanted text-center mb-0 text-yellow font-weight-bold">GRAN GRAN novidades</h1>
-    <h2 class="text-uppercase font-weight-bold text-white">Te esperamos en BRC&#127866</h2>
-    <a href="#" class="btn btn-yellow px-3 mx-5 justify-content-center">Reservar ticket</a>
-  </div>
-</div>
-<!--end of banner-->
-</header>
-<!--end of header-->
-<!--featured section-->
-<!--services1 section-->
-<section class="services py-5 text-center">
-  <div class="container">
-    <div class="row">
-      <!--single service-->
-      <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
-        <span class="services-icon">
-          <i class="fas fa-parachute-box"></i>
-        </span>
-        <h5 class="font-weight-bold text-uppercase text-white">Nueva tienda online</h5>
-        <p class="text-muted text-capitalize">Entrega express para todo el país</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- font awesome desde url -->
+  <script src="https://kit.fontawesome.com/f5161e1654.js" crossorigin="anonymous"></script>
+  <title>TP_Pataonia_WEB</title>
+  <!--FAVICON-->
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicom/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicom/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicom/favicon-16x16.png">
+  <link rel="manifest" href="favicom/site.webmanifest">
+  <link rel="mask-icon" href="favicom/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <header>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <!--a partir de lg screen a nav bar deixa de ser menu sandwich (toggle) e passa a ter os links expostos. Se expande-->
+      <a href="index.html" class="navbar-brand">
+        <img src="./img/logo_patagonia.png" width="200" height="100%" alt="Logomarca Patagonia">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarid">
+        <!--toggler e o menu sandwich-->
+        <i class="fas fa-bars"></i> <!--menu sandwich-->
+      </button>
+      <div class="collapse navbar-collapse" id="navbarid">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item mx-2 nav-active">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="evento.html" class="nav-link">Evento</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="productos.html" class="nav-link">Productos</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="singleproduct.html" class="nav-link">Conocenos</a>
+          </li>
+        </ul>
       </div>
-      <!--end of single service-->
-      <!--single service-->
-      <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
-        <span class="services-icon">
-          <i class="fas fa-phone-volume"></i>
-        </span>
-        <h5 class="font-weight-bold text-uppercase text-white">Atención telefonica 24/7</h5>
-        <p class="text-muted text-capitalize">SIEMPRE estaremos para ayudarlxs</p>
+      <div class="navbar-icons d-none d-sm-flex">
+        <!--single icon-->
+        <div class="navbar-icon mx-2"> <!-- font awesome nedds a parent container a, span, div doenst matter-->
+          <i class="fas fa-search"></i>
+        </div>
+        <!-- end of single icon-->
+        <!--single icon-->
+        <a href="cart.html" class="navbar-icon mx-2 navbar-cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+        <div class="cart-items">3</div>
+        <!--end of single icon-->
       </div>
-      <!--end of single service-->
-      <!--single service-->
-      <div class="col-10 mx-auto col-md 6-col-lg-4 my-3">
-        <span class="services-icon">
-          <i class="fas fa-dollar-sign"></i>
-        </span>
-        <h5 class="font-weight-bold text-uppercase text-white">Comprá directo fábrica</h5>
-        <p class="text-muted text-capitalize">Garantiza el producto mas fresco posible</p>
+    </nav>
+    <!--end of navbar-->
+    <!--banner-->
+    <div class="banner d-flex align-items-center pl-3 pl-lg-5">
+      <div>
+        <h1 class="text-capitalize text-slanted text-center mb-0 text-yellow font-weight-bold">GRAN GRAN novidades</h1>
+        <h2 class="text-uppercase font-weight-bold text-white">Te esperamos en BRC&#127866</h2>
+        <a href="#" class="btn btn-yellow px-3 mx-5 justify-content-center">Reservar ticket</a>
       </div>
-      <!--end of single service-->
     </div>
-  </div>
-</section>
-<!--end of services1 section-->
-<!--categories-->
-<section class="home-categories py-5">
-  <div class="container">
-    <div class="row">
-      <!--title-->
-      <div class="col-10 mx-auto col-md-6 col-lg-3 my-3">
-        <h5 class="text-uppercase">Cuidado y atención en todos los procesos</h5>
-        <p class="text-muted">Creyemos que una buena cerveza empieza desde materias primas de excelente calidad y mucho conocimiento y mejores prácticas en nuestros procesos de fabricacíon.</p>
-        <a href="store.html" class="text-capitalize categories-link">Conocenos</a>
-        <div class="categories-underline"></div>
-      </div>
-      <!--end of title-->
-      <!--main-->
-      <div class="col-10 mx-auto col-md-6 col-lg-9 my-3">
+    <!--end of banner-->
+  </header>
+  <!--end of header-->
+  <!--featured section-->
+  <!--services1 section-->
+  <section class="services py-5 text-center">
+    <div class="container">
       <div class="row">
-        <!--single category-->
-        <div class="col-md-6 col-lg-3 my-3">
-          <div class="category-container">
-            <img src="./img/categ1hops.jpg" class="img-fluid category-img" alt="Flores de lúpulo">
-            <a href="store.html" class="category-link text-slanted">
-              <h6 class="text-uppercase mb-0">Nuestros</h6>
-              <p class="mb-0 text-yellow font-weight-bold">Lúpulos</p>
-            </a>
-          </div>
+        <!--single service-->
+        <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+          <span class="services-icon">
+            <i class="fas fa-parachute-box"></i>
+          </span>
+          <h5 class="font-weight-bold text-uppercase text-white">Nueva tienda online</h5>
+          <p class="text-muted text-capitalize">Entrega express para todo el país</p>
         </div>
-        <!--end of single category-->
-        <!--single category-->
-        <div class="col-md-6 col-lg-3 my-3">
-          <div class="category-container">
-            <img src="./img/categ2malt.jpg" class="img-fluid category-img" alt="Granos de malta">
-            <a href="store.html" class="category-link text-slanted text-weight-bold">
-              <h6 class="text-uppercase mb-0">Nuestros</h6>
-              <p class="mb-0 text-yellow font-weight-bold">Granos</p>
-            </a>
-          </div>
+        <!--end of single service-->
+        <!--single service-->
+        <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+          <span class="services-icon">
+            <i class="fas fa-phone-volume"></i>
+          </span>
+          <h5 class="font-weight-bold text-uppercase text-white">Atención telefonica 24/7</h5>
+          <p class="text-muted text-capitalize">SIEMPRE estaremos para ayudarlxs</p>
         </div>
-        <!--end of single category-->
-        <!--single category-->
-        <div class="col-md-6 col-lg-3 my-3">
-          <div class="category-container">
-            <img src="./img/categ3yeast.jpg" class="img-fluid category-img" alt="Microscópio">
-            <a href="store.html" class="category-link text-slanted text-weight-bold">
-              <h6 class="text-uppercase mb-0">Nuestro</h6>
-              <p class="mb-0 text-yellow font-weight-bold">Lab</p>
-            </a>
-          </div>
+        <!--end of single service-->
+        <!--single service-->
+        <div class="col-10 mx-auto col-md 6-col-lg-4 my-3">
+          <span class="services-icon">
+            <i class="fas fa-dollar-sign"></i>
+          </span>
+          <h5 class="font-weight-bold text-uppercase text-white">Comprá directo fábrica</h5>
+          <p class="text-muted text-capitalize">Garantiza el producto mas fresco posible</p>
         </div>
-        <!--end of single category-->
-        <!--single category-->
-        <div class="col md-6 col-lg-3 my-3">
-          <div class="category-container">
-            <img src="./img/categ4tools.jpg" class="img-fluid category-img" alt="Fermentador de cerveza">
-            <a href="#" class="category-link text-slanted text-weight-bold">
-              <h6 class="text-uppercase mb-0">Nuestra</h6>
-              <p class="mb-0 text-yellow font-weight-bold">Fábrica</p>
-            </a>
-          </div>
-        </div>
-        <!--end of single category-->
-      </div>
+        <!--end of single service-->
       </div>
     </div>
-  </div>
-</section>
-<!--end of categories-->
-<!--patagonia-view -->
-<section>
-  <div class="container-fluid">
-    <div class="row sustainability align-items-end pb-5">
-    </div>
-  </div>
-</section>
-<!--end of view - home filler -->
-<!--newsletter-->
-<section class="newsletter py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-10 mx-auto text-center">
-        <h2 class="text-uppercase">newsletter</h2>
-        <p>Únete a nuestra newsletter! Deja tu correo electrónico y no te pierdas ninguna novedad cervecera. ...</p>
-        <form>
-          <div class="input-group mt-5 mb-4">
-            <input type="text" class="form-control" placeholder="suemail@email.com.ar">
-            <div class="input-group-append">
-            <div class="input-group-text form-icon">
-              <i class="fas fa-envelope"></i>
+  </section>
+  <!--end of services1 section-->
+  <!--categories-->
+  <section class="home-categories py-5">
+    <div class="container">
+      <div class="row">
+        <!--title-->
+        <div class="col-10 mx-auto col-md-6 col-lg-3 my-3">
+          <h5 class="text-uppercase">Cuidado y atención en todos los procesos</h5>
+          <p class="text-muted">Creyemos que una buena cerveza empieza desde materias primas de excelente calidad y
+            mucho conocimiento y mejores prácticas en nuestros procesos de fabricacíon.</p>
+          <a href="store.html" class="text-capitalize categories-link">Conocenos</a>
+          <div class="categories-underline"></div>
+        </div>
+        <!--end of title-->
+        <!--main-->
+        <div class="col-10 mx-auto col-md-6 col-lg-9 my-3">
+          <div class="row">
+            <!--single category-->
+            <div class="col-md-6 col-lg-3 my-3">
+              <div class="category-container">
+                <img src="./img/categ1hops.jpg" class="img-fluid category-img" alt="Flores de lúpulo">
+                <a href="store.html" class="category-link text-slanted">
+                  <h6 class="text-uppercase mb-0">Nuestros</h6>
+                  <p class="mb-0 text-yellow font-weight-bold">Lúpulos</p>
+                </a>
+              </div>
             </div>
+            <!--end of single category-->
+            <!--single category-->
+            <div class="col-md-6 col-lg-3 my-3">
+              <div class="category-container">
+                <img src="./img/categ2malt.jpg" class="img-fluid category-img" alt="Granos de malta">
+                <a href="store.html" class="category-link text-slanted text-weight-bold">
+                  <h6 class="text-uppercase mb-0">Nuestros</h6>
+                  <p class="mb-0 text-yellow font-weight-bold">Granos</p>
+                </a>
+              </div>
             </div>
+            <!--end of single category-->
+            <!--single category-->
+            <div class="col-md-6 col-lg-3 my-3">
+              <div class="category-container">
+                <img src="./img/categ3yeast.jpg" class="img-fluid category-img" alt="Microscópio">
+                <a href="store.html" class="category-link text-slanted text-weight-bold">
+                  <h6 class="text-uppercase mb-0">Nuestro</h6>
+                  <p class="mb-0 text-yellow font-weight-bold">Lab</p>
+                </a>
+              </div>
+            </div>
+            <!--end of single category-->
+            <!--single category-->
+            <div class="col md-6 col-lg-3 my-3">
+              <div class="category-container">
+                <img src="./img/categ4tools.jpg" class="img-fluid category-img" alt="Fermentador de cerveza">
+                <a href="#" class="category-link text-slanted text-weight-bold">
+                  <h6 class="text-uppercase mb-0">Nuestra</h6>
+                  <p class="mb-0 text-yellow font-weight-bold">Fábrica</p>
+                </a>
+              </div>
+            </div>
+            <!--end of single category-->
           </div>
-          <button type="submit" class="btn btn-yellow">suscribite</button>
-        </form>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<!--end of newsletter-->
-            <!--footer-->
-            <footer class="pt-5 footer">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-10 mx-auto text-center">
-                          <img src="./img/logo_patagonia.png"
-                              class="img-fluid" width="300" alt>
-                          <p
-                              class="text-dark font-weight-bold text-slanted text-capitalize text-center ">
-                              &#x1F37A; Cerveceria de montaña 🏔️</p>
-                          <div
-                              class="footer-icons my-5 d-flex justify-content-center">
-                              <!--single icon-->
-                              <a href="#" class="footer-icon mx-2">
-                                  <i class="fab fa-facebook fa-lg"></i>
-                              </a>
-                              <!--end of single icon-->
-                              <!--single icon-->
-                              <a href="#" class="footer-icon mx-2">
-                                  <i class="fab fa-youtube fa-lg"></i>
-                              </a>
-                              <!--end of single icon-->
-                              <!--single icon-->
-                              <a href="#" class="footer-icon mx-2">
-                                  <i class="fab fa-instagram fa-lg"></i>
-                              </a>
-                              <!--single icon-->
-                              <a href="#" class="footer-icon mx-2">
-                                  <i class="fab fa-reddit fa-lg"></i>
-                              </a>
-                              <!--end of single icon-->
-                          </div>
-                          <!--end of footer icon-->
-                      </div>
-                  </div>
-              </footer>
+  </section>
+  <!--end of categories-->
+  <!--patagonia-view -->
+  <section>
+    <div class="container-fluid">
+      <div class="row sustainability align-items-end pb-5">
+      </div>
+    </div>
+  </section>
+  <!--end of view - home filler -->
+  <!--newsletter-->
+  <section class="newsletter py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 mx-auto text-center">
+          <h2 class="text-uppercase">newsletter</h2>
+          <p>Únete a nuestra newsletter! Deja tu correo electrónico y no te pierdas ninguna novedad cervecera. ...</p>
+          <form>
+            <div class="input-group mt-5 mb-4">
+              <input type="text" class="form-control" placeholder="suemail@email.com.ar">
+              <div class="input-group-append">
+                <div class="input-group-text form-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-yellow">suscribite</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end of newsletter-->
+  <!--footer-->
+  <footer class="pt-5 footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 mx-auto text-center">
+          <img src="./img/logo_patagonia.png" class="img-fluid" width="300" alt>
+          <p class="text-dark font-weight-bold text-slanted text-capitalize text-center ">
+            &#x1F37A; Cerveceria de montaña 🏔️</p>
+          <div class="footer-icons my-5 d-flex justify-content-center">
+            <!--single icon-->
+            <a href="#" class="footer-icon mx-2">
+              <i class="fab fa-facebook fa-lg"></i>
+            </a>
+            <!--end of single icon-->
+            <!--single icon-->
+            <a href="#" class="footer-icon mx-2">
+              <i class="fab fa-youtube fa-lg"></i>
+            </a>
+            <!--end of single icon-->
+            <!--single icon-->
+            <a href="#" class="footer-icon mx-2">
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <!--single icon-->
+            <a href="#" class="footer-icon mx-2">
+              <i class="fab fa-reddit fa-lg"></i>
+            </a>
+            <!--end of single icon-->
+          </div>
+          <!--end of footer icon-->
+        </div>
+      </div>
+  </footer>
 
-    <!-- jquery -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <!-- bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <!-- script js -->
-    <script src="js/app.js"></script>
-  </body>
+  <!-- jquery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <!-- script js -->
+  <script src="js/app.js"></script>
+</body>
+
 </html>

@@ -1,466 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <!-- bootstrap css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
-        <!-- main css -->
-        <link rel="stylesheet" href="css/main.css" />
-        <!-- google fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <!--font awesome do curso / nao funciona
-        <link rel="stylesheet" href="css/all.css" />-->
-        <!-- font awesome desde url -->
-        <script src="https://kit.fontawesome.com/f5161e1654.js" crossorigin="anonymous"></script>
-        <title>HomeBrew Premium</title>
-        <!--FAVICON-->
-        <link rel="apple-touch-icon" sizes="120x120" href="/favicom/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicom/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicom/favicon-16x16.png">
-        <link rel="manifest" href="favicom/site.webmanifest">
-        <link rel="mask-icon" href="favicom/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-    </head>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- font awesome desde url -->
+    <script src="https://kit.fontawesome.com/f5161e1654.js" crossorigin="anonymous"></script>
+    <title>TP_Pataonia_WEB</title>
+    <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicom/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicom/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicom/favicon-16x16.png">
+    <link rel="manifest" href="favicom/site.webmanifest">
+    <link rel="mask-icon" href="favicom/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
 <body>
-    <!--header-->
     <header>
-<!--navbar-->
-<nav class="navbar navbar-expand-sm navbar-light">
-<a href="index.html" class="navbar-brand" >
-    <img src="./img/logo.png" alt="company logo">
-    <div class="logo-text"><b>HomeBrew Premium</b></div>
-</a>
-<button type="button" class="navbar-toggler" data-toggler="collapse" data-target="#storeid">
-    <i class="fas fa-bars"></i>
-</button>
-<div class="collapse navbar-collapse" id="storeid">
-    <ul class="navbar-nav mx-auto">
-        <li class="nav-item mx-2">
-            <a href="index.html" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item mx-2">
-            <a href="products.html" class="nav-link">Flash Sale</a>
-        </li>
-        <li class="nav-item mx-2 nav-active">
-            <a href="store.html" class="nav-link">Store</a>
-        </li>
-        <li class="nav-item mx-2">
-            <a href="singleproduct.html" class="nav-link">New products</a>
-        </li>
-    </ul>
-</div>
-<div class="navbar-icons d-none d-sm-flex">
-    <!--single icon-->
-    <div class="navbar-icon mx-2">
-        <i class="fas fa-search"></i>
-    </div>
-    <!--end of single icon-->
-    <!--cart icon-->
-    <a href="cart.html" class="navbar-icon mx-2 navbar-cart-icon">
-        <i class="fas fa-shopping-cart"></i>
-    </a>
-    <div class="cart-items">3</div>
-    <!--end of cart icon-->
-</div>
-</nav>
-<!--end of navbar-->
-<!--banner-->
-<div class="banner-store d-flex align-items-center pl-3 pl-lg-5">
-    <div>
-        <h1 class="text-capitalize text-slanted text-center font-weight-bold mb-0">World-Wide store &#127757 </h1>
-        <h1 class="text-uppercase font-weight-bold text-center text-white">From everywhere, to you!</h1>
-        <a href="store.html" class="btn btn-yellow d-flex justify-content-center">Our products</a>
-    </div>
-</div>
-<!--end of banner-->
+        <!--navbar-->
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <!--a partir de lg screen a nav bar deixa de ser menu sandwich (toggle) e passa a ter os links expostos. Se expande-->
+            <a href="index.html" class="navbar-brand">
+                <img src="./img/logo_patagonia.png" width="200" height="100%" alt="Logomarca Patagonia">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarid">
+                <!--toggler e o menu sandwich-->
+                <i class="fas fa-bars"></i> <!--menu sandwich-->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarid">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mx-2 nav-active">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="evento.html" class="nav-link">Evento</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="productos.html" class="nav-link">Productos</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="singleproduct.html" class="nav-link">Conocenos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-icons d-none d-sm-flex">
+                <!--single icon-->
+                <div class="navbar-icon mx-2"> <!-- font awesome nedds a parent container a, span, div doenst matter-->
+                    <i class="fas fa-search"></i>
+                </div>
+                <!-- end of single icon-->
+                <!--single icon-->
+                <a href="cart.html" class="navbar-icon mx-2 navbar-cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <div class="cart-items">3</div>
+                <!--end of single icon-->
+            </div>
+        </nav>
+        <!--end of navbar-->
+        <!--banner-->
+        <div class="banner-store d-flex align-items-center pl-3 pl-lg-5">
+        </div>
+        <!--end of banner-->
     </header>
-<!--end of header-->
-<!--store section-->
-<section class="store py-5">
-<div class="container-fluid">
-    <div class="row">
-        <!--filters-->
-        <div class="col-10 col-md-5 col-lg-3 mx-auto my-3 px-5 text-capitalize">
-        <!--categories section-->
-        <!--single category-->
-        <div class="store-categories-title my-4">
-            <h6 class="text-uppercase text-slanted font-weight-bold">shop by categories:</h6>
-            <div class="store-categories-underline"></div>
-        </div>
-        <!--single link-->
-        <a href="store.html" class="d-block store-categories-link">
-            <p class="mb-0">Beer yeast, starter & nutrients</p>
-        </a>
-        <!--end of single link-->
-        <!--single link-->
-        <a href="store.html" class="d-block store-categories-link">
-            <p class="mb-0">Beer flavor, spices & sugars</p>
-        </a>
-        <!--end of single link-->
-        <!--single link-->
-        <a href="store.html" class="d-block store-categories-link">
-            <p class="mb-0">Grains, malts & barley</p>
-        </a>
-        <!--end of single link-->
-        <!--single link-->
-        <a href="store.html" class="d-block store-categories-link">
-            <p class="mb-0">Cleanner & sanitizers</p>
-        </a>
-        <!--end of single link-->
-        <!--single link-->
-        <a href="store.html" class="d-block store-categories-link">
-            <p class="mb-0">Fermentation accesories</p>
-        </a>
-        <!--end of single link-->
-        <!--end of single category-->
-        </div>
-        <div class="col-10 col-md-5 col-lg-3 mx-auto px-5 text-capitalize">
-        <!--single category-->
-        <div class="store-categories-title my-4">
-            <h6 class="text-uppercase text-slanted font-weight-bold">shop by brand:</h6>
-            <div class="store-categories-underline"></div>
-        </div>
-            <!--single link-->
-            <a href="store.html" class="d-block store-categories-link">
-                <p class="mb-0">Ss BrewTech</p>
-            </a>
-            <!--end of single link-->
-            <!--single link-->
-            <a href="store.html" class="d-block store-categories-link">
-                <p class="mb-0">Lallemand</p>
-            </a>
-            <!--end of single link-->
-            <!--single link-->
-            <a href="store.html" class="d-block store-categories-link">
-                <p class="mb-0">Imperial Yeast</p>
-            </a>
-            <!--end of single link-->
-            <!--single link-->
-            <a href="store.html" class="d-block store-categories-link">
-                <p class="mb-0">Fermentis</p>
-            </a>
-            <!--end of single link-->
-            <!--single link-->
-            <a href="store.html" class="d-block store-categories-link">
-                <p class="mb-0">Fermaid</p>
-            </a>
-        </div>
-        <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
-            <!--end of single link-->
-        <!--end of single category--> 
-        <!--category-->
-        <div class="store-categories-title my-4">
-            <h6 class="text-uppercase text-slanted font-weight-bold">shop by price:</h6>
-            <div class="store-categories-underline"></div>
-            <form>
-                <br>
-                <div class="form-group"> <!--para agregar o marcador de precos-->
-                    <label for="price-range" class="price-range">range: $0 - $10.000</label>
-                    <input type="range" name="price-range" class="form-control-range" id="price-range">
-                </div>
-                <div class="input-group"> <!--para agregar o caixa de busca por nome-->
-                    <div class="input-group-prepend"> <!--prepende siguinifica que o icone vem antes da caixa de texto-->
-                        <span class="input-group-text form-icon">
-                            <i class="fas fa-search"></i>
-                        </span>
+    <!--end of header-->
+    <!--store section-->
+    <section class="store py-5">
+        <div class="container-fluid">
+            <div class="row">
+                <!--filters-->
+                <div class="col-10 col-md-5 col-lg-3 mx-auto px-5 text-capitalize">
+                    <!--categories section-->
+                    <!--single category-->
+                    <div class="store-categories-title my-4">
+                        <h6 class="text-uppercase text-slanted font-weight-bold">Categorias:</h6>
+                        <div class="store-categories-underline"></div>
                     </div>
-                    <input type="text" class="form-control text-capitalize" placeholder="search by name">
+                    <!--single link-->
+                    <a href="store.html" class="d-block store-categories-link">
+                        <p class="mb-0">IPAs</p>
+                    </a>
+                    <!--end of single link-->
+                    <!--single link-->
+                    <a href="store.html" class="d-block store-categories-link">
+                        <p class="mb-0">Lagers</p>
+                    </a>
+                    <!--end of single link-->
+                    <!--single link-->
+                    <a href="store.html" class="d-block store-categories-link">
+                        <p class="mb-0">Souts</p>
+                    </a>
+                    <!--end of single link-->
+                    <!--single link-->
+                    <a href="store.html" class="d-block store-categories-link">
+                        <p class="mb-0">Cervezas añejadas</p>
+                    </a>
+                    <!--end of single link-->
+                    <!--single link-->
+                    <a href="store.html" class="d-block store-categories-link">
+                        <p class="mb-0">Cervezas de invierno</p>
+                    </a>
+                    <!--end of single link-->
+                    <!--end of single category-->
                 </div>
-            </form>
-        </div>
-    </div>
-</div>
-        <!--end of single category-->
-        <!--end of categories section-->
-    <!--end of filters-->
-    <div class="row">
-        <!--single product-->
-        <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
-            <div class="store-container py-5">
-                <img src="./img/store1.jpg" class="img-fluid" alt="store product">
-                <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i class="fas fa-search"></i></span>
-                <a href="#" class="featured-store-link text-capitalize">add to cart</a>
-            </div>
-            <h6 class="text-capitalize text-center my-2 store-item">Suitcase coller - up to 8 bottlers or 16 cans</h6>
-            <h6 class="text-center">
-                <span>$ 69.99</span>
-            </h6>
-        </div>
-        <!--end of single product-->
-        <!--single product-->
-        <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
-            <div class="store-container py-5">
-                <img src="./img/store2.jpg" class="img-fluid" alt="store product">
-                <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i class="fas fa-search"></i></span>
-                <a href="#" class="featured-store-link text-capitalize">add to cart</a>
-            </div>
-            <h6 class="text-capitalize text-center my-2 store-item">Carry on six pack Margativille case</h6>
-            <h6 class="text-center">
-                <span>$ 12.99</span>
-            </h6>
-        </div>
-        <!--end of single product-->
-        <!--single product-->
-        <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
-            <div class="store-container py-5">
-                <img src="./img/store3.jpg" class="img-fluid" alt="store product">
-                <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i class="fas fa-search"></i></span>
-                <a href="#" class="featured-store-link text-capitalize">add to cart</a>
-            </div>
-            <h6 class="text-capitalize text-center my-2 store-item">Clamp Sampler dispenser</h6>
-            <h6 class="text-center">
-                <span>$ 39.99</span>
-            </h6>
-        </div>
-        <!--end of single product-->
-        <!--single product-->
-        <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
-            <div class="store-container py-5">
-                <img src="./img/store4.jpg" class="img-fluid" alt="store product">
-                <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i class="fas fa-search"></i></span>
-                <a href="#" class="featured-store-link text-capitalize">add to cart</a>
-            </div>
-            <h6 class="text-capitalize text-center my-2 store-item">Clamp 3/4" conector</h6>
-            <h6 class="text-center">
-                <span>$ 31.99</span>
-            </h6>
-        </div>
-        <!--end of single product-->
-        <!--single product-->
-        <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
-            <div class="store-container py-5">
-                <img src="./img/store5.jpg" class="img-fluid" alt="store product">
-                <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i class="fas fa-search"></i></span>
-                <a href="#" class="featured-store-link text-capitalize">add to cart</a>
-            </div>
-            <h6 class="text-capitalize text-center my-2 store-item">90° clamp conector</h6>
-            <h6 class="text-center">
-                <span>$ 22.99</span>
-            </h6>
-        </div>
-        <!--end of single product-->
-        <!--single product-->
-        <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
-            <div class="store-container py-5">
-                <img src="./img/store6.jpg" class="img-fluid" alt="store product">
-                <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i class="fas fa-search"></i></span>
-                <a href="#" class="featured-store-link text-capitalize">add to cart</a>
-            </div>
-            <h6 class="text-center text-capitalize my-2 store-item">Reductor 1" to 3/4" clamp</h6>
-            <h6 class="text-center">
-                <span>$ 19.99</span>
-            </h6>
-        </div>
-        <!--end of single product-->
-        <!--single product-->
-        <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
-            <div class="store-container py-5">
-                <img src="./img/store7.jpg" class="img-fluid" alt="store product">
-                <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i class="fas fa-search"></i></span>
-                <a href="#" class="featured-store-link text-capitalize">add to cart</a>
-            </div>
-            <h6 class="text-center text-capitalize my-2 store-item">Anti atask dispenser</h6>
-            <h6 class="text-center">
-                <span>$ 49.99</span>
-            </h6>
-        </div>
-        <!--end of single product-->
-        <!--single product-->
-        <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
-            <div class="store-container py-5">
-                <img src="./img/store8.jpg" class="img-fluid" alt="store product">
-                <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i class="fas fa-search"></i></span>
-                <a href="#" class="featured-store-link text-capitalize">add to cart</a>
-            </div>
-            <h6 class="text-center text-capitalize my-2 store-item">Magnetic stir plate</h6>
-            <h6 class="text-center">
-                <span>$ 29.99</span>
-            </h6>
-        </div>
-        <!--end of single product-->
-        <!--single product-->
-        <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
-            <div class="store-container">
-                <img src="./img/store9.jpg" class="img-fluid" alt="store product">
-                <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i class="fas fa-search"></i></span>
-                <a href="#" class="featured-store-link text-capitalize">add to cart</a>
-            </div>
-            <h6 class="text-center text-capitalize my-2 store-item">The Yeast Bay - Vermont Ale Yeast</h6>
-            <h6 class="text-center">
-                <span>$ 11.99</span>
-            </h6>
-        </div>
-        <!--end of single product-->
-        <!--single product-->
-        <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
-            <div class="store-container">
-                <img src="./img/store10.jpg" class="img-fluid" alt="store product">
-                <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i class="fas fa-search"></i></span>
-                <a href="#" class="featured-store-link text-capitalize">add to cart</a>
-            </div>
-            <h6 class="text-center text-capitalize my-2 store-item">Imperial Yeast - A10 Darkness Ale</h6>
-            <h6 class="text-center">
-                <span>$ 12.99</span>
-            </h6>
-        </div>
-        <!--end of single product-->
-        <!--single product-->
-        <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
-            <div class="store-container">
-                <img src="./img/store11.jpg" class="img-fluid" alt="store product">
-                <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i class="fas fa-search"></i></span>
-                <a href="#" class="featured-store-link text-capitalize">add to cart</a>
-            </div>
-            <h6 class="text-center text-capitalize my-2 store-item">Imperial Yeast - L28 Urkel Lager</h6>
-            <h6 class="text-center">
-                <span>$ 12.99</span>
-            </h6>
-        </div>
-        <!--end of single product-->
-        <!--single product-->
-        <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
-            <div class="store-container">
-                <img src="./img/store12.jpg" class="img-fluid" alt="store product">
-                <span class="featured-search-icon" data-toggler="#modal" data-target="#pr oductModal"><i class="fas fa-search"></i></span>
-                <a href="#" class="featured-store-link text-capitalize">add to cart</a>
-            </div>
-            <h6 class="text-center text-capitalize my-2 store-item">Imperial Yeast - A18 Joystick Ale</h6>
-            <h6 class="text-center">
-                <span>$ 12.99</span>
-            </h6>
-        </div>
-        <!--end of single product-->
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-4">
-            <a href="#" class="btn btn-yellow text-capitalize text-center store-btn d-flex justify-content-center">Next page</a>
-        </div>
-    </div>
-</div>
-</div>
-</section>
-<!--end of store section-->
-<!--services-->
-<section class="services py-5">
-    <div class="container">
-        <div class="row">
-        <!--single service-->
-        <div class="col-10 mx-auto col-md-6 col-lg-4 d-flex my-3">
-            <div class="services-icon mr-3">
-                <i class="fas fa-truck"></i>
-            </div>
-            <div class="service-text">
-                <h3 class="text-uppercase text-white">Free shipping</h3>
-                <p class="text-muted text-capitalize">World wide free shipping on purchase up to $99.99 and max 50kgs.</p>
-            </div>
-        </div>
-        <!--end of single service-->
-        <!--single service-->
-        <div class="col-10 mx-auto col-md-6 col-lg-4 d-flex my-3">
-            <div class="services-icon mr-3">
-                <i class="fas fa-money-check-alt"></i>
-            </div>
-            <div class="service-text">
-                <h3 class="text-uppercase text-white">Price promise</h3>
-                <p class="text-muted text-capitalize">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos obcaecati nemo ab?</p>
-            </div>
-        </div>
-        <!--end of single service-->
-        <!--single service-->
-        <div class="col-10 mx-auto col-md-6 col-lg-4 d-flex my-3">
-            <div class="services-icon mr-3">
-                <i class="fas fa-award"></i>
-            </div>
-            <div class="service-text">
-                <h3 class="text-uppercase text-white">Lifetime warranty</h3>
-                <p class="text-muted text-capitalize">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum omnis quaerat modi.</p>
-            </div>
-        </div>
-        <!--end of single service-->
-        </div>
-    </div>
-</section>
-<!--end of services-->
-<!--footer-->
-<footer class="py-5 footer">
-<div class="container">
-    <div class="row">
-        <div class="col-10 mx-auto text-center">
-            <h1 class="text-uppercase font-weight-bold text-yellow footer-title text-center d-inline-block text-slanted">HomeBrew Premium</h1>
-            <p class="text-dark text-slanted d-flex text-capitalize justify-content-center font-weight-bold">World-wide homebrew supply &#x1F37A;</p>
-            <div class="footer-icon my-5 d-flex justify-content-center">
-                <!--single contact-->
-                <a href="#" class="footer-icon mx-2">
-                <i class="fab fa-facebook"></i>
-                </a>
-                <!--end of single contact-->
-                <!--single contact-->
-                <a href="#" class="footer-icon mx-2">
-                <i class="fab fa-youtube"></i>
-                </a>
-                <!--end of single contact-->
-                <!--single contact-->
-                <a href="#" class="footer-icon mx-2">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <!--end of single contact-->
-                <!--single contact-->
-                <a href="#" class="footer-icon mx-2">
-                <i class="fab fa-youtube"></i>
-                </a>
-                <!--end of single contact-->
-                <!--single contact-->
-                <a href="#" class="footer-icon mx-2">
-                <i class="fab fa-reddit"></i> 
-                </a>
-                <!--end of single contact-->
-            </div>
-            <!--end of footer icon-->
-            <p class="text-muted text-capitalize w-75 mx-auto text-center">Since 2018, HomeBrew Premium has offered the largest selection of brewing supplies to home brewers across the world. What started in a 150 square foot shed in a backyard has now expanded to two warehouses, a manufacturing metal shop, and four homebrew stores, all while remaining under the same passionate ownership. </p>
-            <!--contatcs-->
-            <div class="footer-contact mt-5 d-flex justify-content-around wrap-flex">
-                <!--single contact-->
-                <div class="text-capitalize">
-                    <span class="footer-icon mr-2">
-                        <i class="fas fa-map"></i>
-                    </span>
-                    123 main avenue, California.
+                <div class="col-10 col-md-5 col-lg-3 mx-auto px-5 text-capitalize">
+                    <!--single category-->
+                    <div class="store-categories-title my-4">
+                        <h6 class="text-uppercase text-slanted font-weight-bold">Envases:</h6>
+                        <div class="store-categories-underline"></div>
+                    </div>
+                    <!--single link-->
+                    <a href="store.html" class="d-block store-categories-link">
+                        <p class="mb-0">Retornable 1L ♻️</p>
+                    </a>
+                    <!--end of single link-->
+                    <!--single link-->
+                    <a href="store.html" class="d-block store-categories-link">
+                        <p class="mb-0">Latas</p>
+                    </a>
+                    <!--end of single link-->
+                    <!--single link-->
+                    <a href="store.html" class="d-block store-categories-link">
+                        <p class="mb-0">Botellas 750ml</p>
+                    </a>
+                    <!--end of single link-->
+                    <!--single link-->
+                    <a href="store.html" class="d-block store-categories-link">
+                        <p class="mb-0">Botellas 335ml</p>
+                    </a>
+                    <!--end of single link-->
+                    <!--single link-->
+                    <a href="store.html" class="d-block store-categories-link">
+                        <p class="mb-0">Barriles</p>
+                    </a>
                 </div>
-                <!--end of single contact-->
-                <!--single contact-->
-                <div class="text-capitalize">
-                    <span class="footer-icon mr-2">
-                    <i class="fas fa-phone"></i>
-                    </span>  + (123) 456-789
+                <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
+                    <!--end of single link-->
+                    <!--end of single category-->
+                    <!--category-->
+                    <div class="store-categories-title my-4">
+                        <h6 class="text-uppercase text-slanted font-weight-bold">Filtrar por precio:</h6>
+                        <div class="store-categories-underline"></div>
+                        <form>
+                            <br>
+                            <div class="form-group"> <!--para agregar o marcador de precos-->
+                                <label for="price-range" class="price-range">rango: $0 - $10.000</label>
+                                <input type="range" name="price-range" class="form-control-range" id="price-range">
+                            </div>
+                            <div class="input-group"> <!--para agregar o caixa de busca por nome-->
+                                <div class="input-group-prepend">
+                                    <!--prepende siguinifica que o icone vem antes da caixa de texto-->
+                                    <span class="input-group-text form-icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control text-capitalize" placeholder="Búsqueda por nombre">
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <!--end of single contact-->
-                <!--single contact-->
-                <div>
-                    <span class="footer-icon mr-2">
-                        <i class="fas fa-envelope"></i>
-                    </span> contact@homebrewpremium.com
-                </div>
-                <!--end of single contact-->
             </div>
-            <!--end of contacts-->
+            <!--end of single category-->
+            <!--end of categories section-->
+            <!--end of filters-->
+            <div class="row">
+                <!--single product-->
+                <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
+                    <div class="store-container py-5">
+                        <img src="./img/producto1.1.jpg" class="img-fluid rounded" alt="store product">
+                        <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i
+                                class="fas fa-search"></i></span>
+                        <a href="#" class="featured-store-link text-capitalize">Agregar a carrito</a>
+                    </div>
+                    <h6 class="text-capitalize text-center my-2 store-item">Patagonia Lager</h6>
+                    <h6 class="text-center">
+                        <span>$ 9.99</span>
+                    </h6>
+                </div>
+                <!--end of single product-->
+                <!--single product-->
+                <div class="col-10 col-md-6 col-lg-3 px-5 text-capitalize">
+                    <div class="store-container py-5">
+                        <img src="./img/producto2.2.jpg" class="img-fluid" alt="store product">
+                        <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i
+                                class="fas fa-search"></i></span>
+                        <a href="#" class="featured-store-link text-capitalize">Agregar a carrito</a>
+                    </div>
+                    <h6 class="text-capitalize text-center my-2 store-item">Patagonia Kune</h6>
+                    <h6 class="text-center">
+                        <span>$ 12.99</span>
+                    </h6>
+                </div>
+                <!--end of single product-->
+                <!--single product-->
+                <div class="col-10 col-md-6 col-lg-3 px-5 text-capitalize">
+                    <div class="store-container py-5">
+                        <img src="./img/producto3.jpg" class="img-fluid" alt="store product">
+                        <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i
+                                class="fas fa-search"></i></span>
+                        <a href="#" class="featured-store-link text-capitalize">Agregar a carrito</a>
+                    </div>
+                    <h6 class="text-capitalize text-center my-2 store-item">Vera IPA</h6>
+                    <h6 class="text-center">
+                        <span>$ 19.99</span>
+                    </h6>
+                </div>
+                <!--end of single product-->
+                <!--single product-->
+                <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
+                    <div class="store-container py-5">
+                        <img src="./img/producto4.jpg" class="img-fluid" alt="store product">
+                        <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i
+                                class="fas fa-search"></i></span>
+                        <a href="#" class="featured-store-link text-capitalize">Agregar a carrito</a>
+                    </div>
+                    <h6 class="text-capitalize text-center my-2 store-item">Patagonia Black Lager</h6>
+                    <h6 class="text-center">
+                        <span>$ 31.99</span>
+                    </h6>
+                </div>
+                <!--end of single product-->
+                <!--single product-->
+                <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
+                    <div class="store-container py-5">
+                        <img src="./img/store5.jpg" class="img-fluid" alt="store product">
+                        <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i
+                                class="fas fa-search"></i></span>
+                        <a href="#" class="featured-store-link text-capitalize">Agregar a carrito</a>
+                    </div>
+                    <h6 class="text-capitalize text-center my-2 store-item">90° clamp conector</h6>
+                    <h6 class="text-center">
+                        <span>$ 22.99</span>
+                    </h6>
+                </div>
+                <!--end of single product-->
+                <!--single product-->
+                <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
+                    <div class="store-container py-5">
+                        <img src="./img/store6.jpg" class="img-fluid" alt="store product">
+                        <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i
+                                class="fas fa-search"></i></span>
+                        <a href="#" class="featured-store-link text-capitalize">Agregar a carrito</a>
+                    </div>
+                    <h6 class="text-center text-capitalize my-2 store-item">Reductor 1" to 3/4" clamp</h6>
+                    <h6 class="text-center">
+                        <span>$ 19.99</span>
+                    </h6>
+                </div>
+                <!--end of single product-->
+                <!--single product-->
+                <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
+                    <div class="store-container py-5">
+                        <img src="./img/store7.jpg" class="img-fluid" alt="store product">
+                        <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i
+                                class="fas fa-search"></i></span>
+                        <a href="#" class="featured-store-link text-capitalize">Agregar a carrito</a>
+                    </div>
+                    <h6 class="text-center text-capitalize my-2 store-item">Anti atask dispenser</h6>
+                    <h6 class="text-center">
+                        <span>$ 49.99</span>
+                    </h6>
+                </div>
+                <!--end of single product-->
+                <!--single product-->
+                <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
+                    <div class="store-container py-5">
+                        <img src="./img/store8.jpg" class="img-fluid" alt="store product">
+                        <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i
+                                class="fas fa-search"></i></span>
+                        <a href="#" class="featured-store-link text-capitalize">Agregar a carrito</a>
+                    </div>
+                    <h6 class="text-center text-capitalize my-2 store-item">Magnetic stir plate</h6>
+                    <h6 class="text-center">
+                        <span>$ 29.99</span>
+                    </h6>
+                </div>
+                <!--end of single product-->
+                <!--single product-->
+                <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
+                    <div class="store-container">
+                        <img src="./img/store9.jpg" class="img-fluid" alt="store product">
+                        <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i
+                                class="fas fa-search"></i></span>
+                        <a href="#" class="featured-store-link text-capitalize">Agregar a carrito</a>
+                    </div>
+                    <h6 class="text-center text-capitalize my-2 store-item">The Yeast Bay - Vermont Ale Yeast</h6>
+                    <h6 class="text-center">
+                        <span>$ 11.99</span>
+                    </h6>
+                </div>
+                <!--end of single product-->
+                <!--single product-->
+                <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
+                    <div class="store-container">
+                        <img src="./img/store10.jpg" class="img-fluid" alt="store product">
+                        <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i
+                                class="fas fa-search"></i></span>
+                        <a href="#" class="featured-store-link text-capitalize">Agregar a carrito</a>
+                    </div>
+                    <h6 class="text-center text-capitalize my-2 store-item">Imperial Yeast - A10 Darkness Ale</h6>
+                    <h6 class="text-center">
+                        <span>$ 12.99</span>
+                    </h6>
+                </div>
+                <!--end of single product-->
+                <!--single product-->
+                <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
+                    <div class="store-container">
+                        <img src="./img/store11.jpg" class="img-fluid" alt="store product">
+                        <span class="featured-search-icon" data-toggler="#modal" data-target="#productModal"><i
+                                class="fas fa-search"></i></span>
+                        <a href="#" class="featured-store-link text-capitalize">Agregar a carrito</a>
+                    </div>
+                    <h6 class="text-center text-capitalize my-2 store-item">Imperial Yeast - L28 Urkel Lager</h6>
+                    <h6 class="text-center">
+                        <span>$ 12.99</span>
+                    </h6>
+                </div>
+                <!--end of single product-->
+                <!--single product-->
+                <div class="col-10 col-md-6 col-lg-3 mx-auto px-5 text-capitalize">
+                    <div class="store-container">
+                        <img src="./img/store12.jpg" class="img-fluid" alt="store product">
+                        <span class="featured-search-icon" data-toggler="#modal" data-target="#pr oductModal"><i
+                                class="fas fa-search"></i></span>
+                        <a href="#" class="featured-store-link text-capitalize">Agregar a carrito</a>
+                    </div>
+                    <h6 class="text-center text-capitalize my-2 store-item">Imperial Yeast - A18 Joystick Ale</h6>
+                    <h6 class="text-center">
+                        <span>$ 12.99</span>
+                    </h6>
+                </div>
+                <!--end of single product-->
+            </div>
         </div>
-    </div>
-</div>    
-</footer>
-<!--end of footer-->
-    
-<!-- jquery -->
-<script src="js/jquery-3.3.1.min.js"></script>
-<!-- bootstrap js -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-<!-- script js -->
-<script src="js/app.js"></script>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <a href="#"
+                        class="btn btn-yellow text-capitalize text-center store-btn d-flex justify-content-center">Next
+                        page</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--end of store section-->
+    <!--services-->
+    <section class="services py-5">
+        <div class="container">
+            <div class="row">
+                <!--single service-->
+                <div class="col-10 mx-auto col-md-6 col-lg-4 d-flex my-3">
+                    <div class="services-icon mr-3">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="text-uppercase text-white">Free shipping</h3>
+                        <p class="text-muted text-capitalize">World wide free shipping on purchase up to $99.99 and max
+                            50kgs.</p>
+                    </div>
+                </div>
+                <!--end of single service-->
+                <!--single service-->
+                <div class="col-10 mx-auto col-md-6 col-lg-4 d-flex my-3">
+                    <div class="services-icon mr-3">
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="text-uppercase text-white">Price promise</h3>
+                        <p class="text-muted text-capitalize">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Dignissimos obcaecati nemo ab?</p>
+                    </div>
+                </div>
+                <!--end of single service-->
+                <!--single service-->
+                <div class="col-10 mx-auto col-md-6 col-lg-4 d-flex my-3">
+                    <div class="services-icon mr-3">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="text-uppercase text-white">Lifetime warranty</h3>
+                        <p class="text-muted text-capitalize">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Dolorum omnis quaerat modi.</p>
+                    </div>
+                </div>
+                <!--end of single service-->
+            </div>
+        </div>
+    </section>
+    <!--end of services-->
+    <!--footer-->
+    <footer class="py-5 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 mx-auto text-center">
+                    <h1
+                        class="text-uppercase font-weight-bold text-yellow footer-title text-center d-inline-block text-slanted">
+                        HomeBrew Premium</h1>
+                    <p class="text-dark text-slanted d-flex text-capitalize justify-content-center font-weight-bold">
+                        World-wide homebrew supply &#x1F37A;</p>
+                    <div class="footer-icon my-5 d-flex justify-content-center">
+                        <!--single contact-->
+                        <a href="#" class="footer-icon mx-2">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <!--end of single contact-->
+                        <!--single contact-->
+                        <a href="#" class="footer-icon mx-2">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <!--end of single contact-->
+                        <!--single contact-->
+                        <a href="#" class="footer-icon mx-2">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <!--end of single contact-->
+                        <!--single contact-->
+                        <a href="#" class="footer-icon mx-2">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <!--end of single contact-->
+                        <!--single contact-->
+                        <a href="#" class="footer-icon mx-2">
+                            <i class="fab fa-reddit"></i>
+                        </a>
+                        <!--end of single contact-->
+                    </div>
+                    <!--end of footer icon-->
+                    <p class="text-muted text-capitalize w-75 mx-auto text-center">Since 2018, HomeBrew Premium has
+                        offered the largest selection of brewing supplies to home brewers across the world. What started
+                        in a 150 square foot shed in a backyard has now expanded to two warehouses, a manufacturing
+                        metal shop, and four homebrew stores, all while remaining under the same passionate ownership.
+                    </p>
+                    <!--contatcs-->
+                    <div class="footer-contact mt-5 d-flex justify-content-around wrap-flex">
+                        <!--single contact-->
+                        <div class="text-capitalize">
+                            <span class="footer-icon mr-2">
+                                <i class="fas fa-map"></i>
+                            </span>
+                            123 main avenue, California.
+                        </div>
+                        <!--end of single contact-->
+                        <!--single contact-->
+                        <div class="text-capitalize">
+                            <span class="footer-icon mr-2">
+                                <i class="fas fa-phone"></i>
+                            </span> + (123) 456-789
+                        </div>
+                        <!--end of single contact-->
+                        <!--single contact-->
+                        <div>
+                            <span class="footer-icon mr-2">
+                                <i class="fas fa-envelope"></i>
+                            </span> contact@homebrewpremium.com
+                        </div>
+                        <!--end of single contact-->
+                    </div>
+                    <!--end of contacts-->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--end of footer-->
+
+    <!-- jquery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <!-- script js -->
+    <script src="js/app.js"></script>
 </body>
+
 </html>

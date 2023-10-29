@@ -62,7 +62,7 @@ body {
 .banner-store {
 	min-height: calc(100vh - 178px);
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(253, 253, 253, 0.1)),
-		url(../img/storebg3.jpg);
+		url(../img/fundonovo2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -429,8 +429,6 @@ body {
 .store-container {
 	position: relative;
 	overflow: hidden;
-	border: 0.1rem solid rgba(0, 0, 0, 0.1);
-	border-radius: 20px;
 }
 
 .store-container:hover .featured-search-icon {
@@ -501,6 +499,23 @@ body {
 .new-product-photo:hover {
 	opacity: 1;
 }
+
+/* .banner-producto1{
+	background: url(../img/beerfondo2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	display: block;
+}
+
+.banner-producto2{
+	background: url(../img/beerfondo.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 50%;
+} */
 
 /* cart */
 
