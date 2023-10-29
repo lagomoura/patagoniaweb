@@ -51,12 +51,11 @@ body {
 
 .banner-sale {
 	min-height: 60vh;
-	background: url(/img/evento_day.jpg);
+	background: url(../img/evento_day.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
-	vertical-align: text-top
 }
 
 .banner-store {
@@ -283,17 +282,15 @@ body {
 /* Featured */
 
 .featured {
-	background: #005A3A;
-	filter: opacity(90%)
+	background: red
 }
-
-
 
 .featured-container {
-	position: relative;
+	/* position: relative; */
 	overflow: hidden;
+	border: 0.1rem solid rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
 }
-
 
 .featured-search-icon {
 	background: var(--mainWhite);
