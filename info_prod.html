@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- font awesome desde url -->
+  <script src="https://kit.fontawesome.com/f5161e1654.js" crossorigin="anonymous"></script>
+  <title>TP_Patagonia_WEB</title>
+  <!--FAVICON-->
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicom/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicom/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicom/favicon-16x16.png">
+  <link rel="manifest" href="favicom/site.webmanifest">
+  <link rel="mask-icon" href="favicom/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <header>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <!--a partir de lg screen a nav bar deixa de ser menu sandwich (toggle) e passa a ter os links expostos. Se expande-->
+      <a href="index.html" class="navbar-brand">
+        <img src="./img/logo_patagonia.png" width="200" height="100%" alt="Logomarca Patagonia">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarid">
+        <!--toggler e o menu sandwich-->
+        <i class="fas fa-bars"></i> <!--menu sandwich-->
+      </button>
+      <div class="collapse navbar-collapse" id="navbarid">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item mx-2">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="evento.html" class="nav-link">Evento</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="productos.html" class="nav-link">Productos</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="conocenos.html" class="nav-link">Conocenos</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="contacto.html" class="nav-link">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-icons d-none d-sm-flex">
+        <!--single icon-->
+        <div class="navbar-icon mx-2">
+          <!-- font awesome nedds a parent container a, span, div doenst matter-->
+          <i class="fas fa-search"></i>
+        </div>
+        <!-- end of single icon-->
+        <!--single icon-->
+        <a href="cart.html" class="navbar-icon mx-2 navbar-cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+        <div class="cart-items">3</div>
+        <!--end of single icon-->
+      </div>
+    </nav>
+  </header>
+  <!--end of navbar-->
+  <!-- PRODUCTOS -->
+  <section class="featured-productos py-3">
+    <div class="container">
+      <div class="row">
+        <!--single product-->
+        <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-center">
+          <div class="featured-container text-center">
+            <p class="text-dark text-justify texto-productos">
+              Optar por cervezas en botellas reciclables es una elección consciente. Estamos contribuyendo
+              a reducir la contaminación plástica y proteger nuestro entorno mientras disfrutamos de la
+              cerveza. Hagamos un brindis por un consumo responsable y sostenible. Cada botella reciclable
+              es un pequeño gesto que se suma al gran cambio hacia un mundo más limpio y sostenible. Con
+              cada sorbo, nos unimos a la causa de preservar el planeta y disfrutar de la cerveza con
+              conciencia ambiental.
+            </p>
+          </div>
+        </div>
+        <!--end of single product-->
+        <!--single product-->
+        <div class="col-10 mx-auto col-md-6 col-lg-4 flex-wrap">
+          <div class="featured-container py-5">
+            <img src="./img/prod5.jpg" class="img-fluid w-75" alt="sale product">
+          </div>
+        </div>
+        <!--end of single product-->
+        <!--single product-->
+        <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-center">
+          <div class="featured-container text-center">
+            <p class="text-dark text-justify texto-productos">
+              Optar por cervezas en botellas reciclables es una elección consciente. Estamos contribuyendo
+              a reducir la contaminación plástica y proteger nuestro entorno mientras disfrutamos de la
+              cerveza. Hagamos un brindis por un consumo responsable y sostenible. Cada botella reciclable
+              es un pequeño gesto que se suma al gran cambio hacia un mundo más limpio y sostenible. Con
+              cada sorbo, nos unimos a la causa de preservar el planeta y disfrutar de la cerveza con
+              conciencia ambiental.
+            </p>
+          </div>
+        </div>
+        <!--end of single product-->
+        <div class="row">
+          <!--single product-->
+          <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-center">
+            <div class="featured-container text-center">
+              <p class="text-dark text-justify texto-productos">
+                Optar por cervezas en botellas reciclables es una elección consciente. Estamos contribuyendo
+                a reducir la contaminación plástica y proteger nuestro entorno mientras disfrutamos de la
+                cerveza. Hagamos un brindis por un consumo responsable y sostenible. Cada botella reciclable
+                es un pequeño gesto que se suma al gran cambio hacia un mundo más limpio y sostenible. Con
+                cada sorbo, nos unimos a la causa de preservar el planeta y disfrutar de la cerveza con
+                conciencia ambiental.
+              </p>
+            </div>
+          </div>
+          <!--end of single product-->
+          <!--single product-->
+          <div class="col-10 mx-auto col-md-6 col-lg-4 flex-wrap">
+            <div class="featured-container py-5">
+              <img src="./img/producto9.jpg" class="img-fluid w-75" alt="sale product">
+            </div>
+          </div>
+          <!--end of single product-->
+          <!--single product-->
+          <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-center">
+            <div class="featured-container text-center">
+              <p class="text-dark text-justify texto-productos">
+                Optar por cervezas en botellas reciclables es una elección consciente. Estamos contribuyendo
+                a reducir la contaminación plástica y proteger nuestro entorno mientras disfrutamos de la
+                cerveza. Hagamos un brindis por un consumo responsable y sostenible. Cada botella reciclable
+                es un pequeño gesto que se suma al gran cambio hacia un mundo más limpio y sostenible. Con
+                cada sorbo, nos unimos a la causa de preservar el planeta y disfrutar de la cerveza con
+                conciencia ambiental.
+              </p>
+            </div>
+          </div>
+          <!--end of single product-->
+          <div class="row">
+            <!--single product-->
+            <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-center">
+              <div class="featured-container text-center">
+                <p class="text-dark text-justify texto-productos">
+                  Optar por cervezas en botellas reciclables es una elección consciente. Estamos contribuyendo
+                  a reducir la contaminación plástica y proteger nuestro entorno mientras disfrutamos de la
+                  cerveza. Hagamos un brindis por un consumo responsable y sostenible. Cada botella reciclable
+                  es un pequeño gesto que se suma al gran cambio hacia un mundo más limpio y sostenible. Con
+                  cada sorbo, nos unimos a la causa de preservar el planeta y disfrutar de la cerveza con
+                  conciencia ambiental.
+                </p>
+              </div>
+            </div>
+            <!--end of single product-->
+            <!--single product-->
+            <div class="col-10 mx-auto col-md-6 col-lg-4 flex-wrap">
+              <div class="featured-container py-5">
+                <img src="./img/producto10.jpg" class="img-fluid w-75" alt="sale product">
+              </div>
+            </div>
+            <!--end of single product-->
+            <!--single product-->
+            <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-center">
+              <div class="featured-container text-center">
+                <p class="text-dark text-justify texto-productos">
+                  Optar por cervezas en botellas reciclables es una elección consciente. Estamos contribuyendo
+                  a reducir la contaminación plástica y proteger nuestro entorno mientras disfrutamos de la
+                  cerveza. Hagamos un brindis por un consumo responsable y sostenible. Cada botella reciclable
+                  es un pequeño gesto que se suma al gran cambio hacia un mundo más limpio y sostenible. Con
+                  cada sorbo, nos unimos a la causa de preservar el planeta y disfrutar de la cerveza con
+                  conciencia ambiental.
+                </p>
+              </div>
+            </div>
+            <!--end of single product-->
+            <div class="row">
+              <!--single product-->
+              <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-center">
+                <div class="featured-container text-center">
+                  <p class="text-dark text-justify texto-productos">
+                    Optar por cervezas en botellas reciclables es una elección consciente. Estamos contribuyendo
+                    a reducir la contaminación plástica y proteger nuestro entorno mientras disfrutamos de la
+                    cerveza. Hagamos un brindis por un consumo responsable y sostenible. Cada botella reciclable
+                    es un pequeño gesto que se suma al gran cambio hacia un mundo más limpio y sostenible. Con
+                    cada sorbo, nos unimos a la causa de preservar el planeta y disfrutar de la cerveza con
+                    conciencia ambiental.
+                  </p>
+                </div>
+              </div>
+              <!--end of single product-->
+              <!--single product-->
+              <div class="col-10 mx-auto col-md-6 col-lg-4 flex-wrap">
+                <div class="featured-container py-5">
+                  <img src="./img/producto11.jpg" class="img-fluid w-75" alt="sale product">
+                </div>
+              </div>
+              <!--end of single product-->
+              <!--single product-->
+              <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-center">
+                <div class="featured-container text-center">
+                  <p class="text-dark text-justify texto-productos">
+                    Optar por cervezas en botellas reciclables es una elección consciente. Estamos contribuyendo
+                    a reducir la contaminación plástica y proteger nuestro entorno mientras disfrutamos de la
+                    cerveza. Hagamos un brindis por un consumo responsable y sostenible. Cada botella reciclable
+                    es un pequeño gesto que se suma al gran cambio hacia un mundo más limpio y sostenible. Con
+                    cada sorbo, nos unimos a la causa de preservar el planeta y disfrutar de la cerveza con
+                    conciencia ambiental.
+                  </p>
+                </div>
+              </div>
+              <!--end of single product-->
+            </div>
+  </section>
+  <!-- end PRODUCTOS -->
+  <!-- Inicio Footer -->
+  <footer class="pt-5 footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 mx-auto text-center">
+          <img src="./img/logo_patagonia.png" class="img-fluid" width="300" alt>
+          <p class="text-dark font-weight-bold text-slanted text-capitalize text-center ">
+            &#x1F37A; Cerveceria de montaña 🏔️</p>
+          <div class="footer-icons my-3 d-flex justify-content-center">
+            <!--single icon-->
+            <a href="#" class="footer-icon mx-2">
+              <i class="fab fa-facebook fa-lg"></i>
+            </a>
+            <!--end of single icon-->
+            <!--single icon-->
+            <a href="#" class="footer-icon mx-2">
+              <i class="fab fa-youtube fa-lg"></i>
+            </a>
+            <!--end of single icon-->
+            <!--single icon-->
+            <a href="#" class="footer-icon mx-2">
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <!--single icon-->
+            <a href="#" class="footer-icon mx-2">
+              <i class="fab fa-reddit fa-lg"></i>
+            </a>
+            <!--end of single icon-->
+          </div>
+          <!--end of footer icon-->
+        </div>
+      </div>
+  </footer>
+  <!-- Fin del FOOTER -->
+</body>
+
+</html>
