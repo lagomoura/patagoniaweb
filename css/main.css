@@ -51,7 +51,7 @@ body {
 
 .banner-sale {
 	min-height: 60vh;
-	background: url(./img/evento_day.jpg);
+	background: url(/img/evento_day.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
